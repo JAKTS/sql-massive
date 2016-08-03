@@ -20,7 +20,7 @@ INSERT INTO affected_areas (id, name) VALUES (9, 'Elbow');
 -- Recreate our data from yesterday
 CREATE TABLE injuries
 (
-  id INTEGER PRIMARY KEY,
+  id INTEGER PRIMARY KEY DEFAULT NEXTVAL('incidents_id_seq'),
   name VARCHAR(40),
   description TEXT,
   tth INTEGER,
